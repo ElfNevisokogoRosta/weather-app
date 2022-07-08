@@ -4,11 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page title</title>
-    <link rel="stylesheet" href="./sass/index.scss" />
     <script type="module" src="./index.js"></script>
   </head>
   <body>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
+    <form class="citySearch">
+      <label for="cityQ">
+        <input type="text" name="cityQ">
+      </label>
+      <button type="submit">Get weather</button>
+      <select name="userLg">
+        <option value="ua">ua</option>
+        <option value="en">en </option>
+        <option value="fr">fr </option>
+        <option value="lt">lt </option>
+        <option value="de">de </option>
+      </select>
+    </form>
+    <div class="weather__info">
+
+    </div>
   </body>
 </html>
