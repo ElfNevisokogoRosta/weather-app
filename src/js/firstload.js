@@ -5,7 +5,7 @@ const URL = 'https://api.openweathermap.org/data/2.5/weather';
 const temperatureEl = document.querySelector('.weather__info');
 const geoOptions = {
     enableHighAccuracy: true,
-    timeout: 5000,
+    timeout: 1000,
     maximumAge: 0
   };
  async function geoOnSuccess(pos){
