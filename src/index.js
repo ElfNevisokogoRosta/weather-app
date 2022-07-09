@@ -1,5 +1,7 @@
 import fetchWeather from './js/fecth';
 import {renderTemperature, renderWind} from './js/render';
+import geoOnSuccess from './js/firstload';
+
 const formEl = document.querySelector('.citySearch');
 const temperatureEl = document.querySelector('.weather__info');
 const lgEl = formEl.elements.userLg;
