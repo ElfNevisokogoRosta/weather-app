@@ -1,9 +1,10 @@
 import axios from "axios";
-const URL = 'https://api.openweathermap.org/data/2.5/weather';
+const URL = 'https://api.openweathermap.org/data/2.5/onecall';
 const API_KEY = 'dd8a7c56bd7f5e6dc42321ae9ddd0efb';
-export default async function getWeather(name){
+export default async function oneCall({lat, lon}){
     const options = new URLSearchParams({
-        q: name,
+        lat: lat,
+        lon: lon,
         appid: API_KEY,
         units: 'metric',
     });
